@@ -1,0 +1,107 @@
+body {
+	font-family: Avenir;
+	background-color: #f7f7f7;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.pageLinks {
+	display: inline;
+	float: right;
+}
+
+nav {
+	background-color: white;
+	opacity: .95;
+	padding: 1em 2em;
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+  	z-index: 100;
+}
+
+a {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
+#name {
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.pageLinks a {
+	margin: 0 2em;
+	font-size: 14px;
+}
+
+.titleBox {
+	width: 100%;
+	opacity: 1;
+}
+
+.row {
+	padding: 0;
+	margin: 0;
+}
+
+.contentTitle {
+	padding: 1.75em;
+	font-size: 21px;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+
+.col-lg-4 {
+	margin-bottom: 4em;
+}
+
+.thumbnail {
+	width: 350px;
+	height: 350px;
+	margin: auto;
+	background-size: 100%;
+}
+
+.hoverOverlay {
+	opacity: 0;
+	width: 350px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-color: gray;
+	transition-duration: .4s;
+}
+
+.thumbnail:hover .hoverOverlay {
+	opacity: .75;
+	transition-duration: .4s;
+}
+
+.projectTitle {
+	font-size: 24px;
+	opacity: 0;
+	position: relative;
+	top: 160px;
+	text-align: center;
+	color: white;
+	transition-duration: .4s;
+	z-index: 10;
+	text-underline-position: none;
+}
+
+.thumbnail:hover .projectTitle {
+	opacity: 1;
+	transition-duration: .4s;
+}
+
+.media {
+	padding: 0 2em;
+	padding-bottom: 2em;
+}
+
+.skills {
+	padding-left: 0;
+}
