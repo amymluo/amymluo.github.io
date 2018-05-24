@@ -769,7 +769,11 @@ function preload() {
 
 ///////////////////////// GAME /////////////////////////////
 function setup() {
-    createCanvas(700, 700);
+    var cnv = createCanvas(700, 700);
+    var x = (windowWidth - width) / 2;
+    var y = (windowHeight - height) / 2;
+    cnv.position(x, y);
+
     circuit1 = new Circuit1();
     p1 = new Player(10, 595);
     npcs = [
