@@ -772,7 +772,8 @@ function setup() {
     var cnv = createCanvas(700, 700);
     var x = (windowWidth - width) / 2;
     var y = (windowHeight - height) / 2;
-    cnv.position(x, y);
+    cnv.position(x);
+    //cnv.parent('sketch-holder');
 
     circuit1 = new Circuit1();
     p1 = new Player(10, 595);
