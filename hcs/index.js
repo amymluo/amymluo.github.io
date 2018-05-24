@@ -86,35 +86,36 @@ let font;
 let bgMusic, powerSound, bleh, yum, aww;
 
 function preload() {
-    bg = loadImage("images/kitchen.png");
-    titleBG = loadImage("images/titlescreen.png");
-    infoBG = loadImage("images/info.png");
-    gameOverBG = loadImage("images/gameover.png");
+    bg = loadImage("hcs/images/kitchen.png");
+    titleBG = loadImage("hcs/images/titlescreen.png");
+    infoBG = loadImage("hcs/images/info.png");
+    gameOverBG = loadImage("hcs/images/gameover.png");
 
-    john = loadImage("images/john.png");
-    superJohn = loadImage("images/power john.png");
-    bubbleTea = loadImage("images/bubble tea.png");
+    john = loadImage("hcs/images/john.png");
+    superJohn = loadImage("hcs/images/power john.png");
+    bubbleTea = loadImage("hcs/images/bubble tea.png");
 
-    pizza = loadImage("images/pizza.png");
-    burger = loadImage("images/hamburger.png");
-    donut = loadImage("images/donut.png");
+    pizza = loadImage("hcs/images/pizza.png");
+    burger = loadImage("hcs/images/hamburger.png");
+    donut = loadImage("hcs/images/donut.png");
 
-    kale = loadImage("images/kale.png");
-    broccoli = loadImage("images/broccoli.png");
+    kale = loadImage("hcs/images/kale.png");
+    broccoli = loadImage("hcs/images/broccoli.png");
 
-    font = loadFont("pcsenior.ttf");
+    font = loadFont("hcs/pcsenior.ttf");
 
     //sounds
     soundFormats('mp3', 'wav');
-    bgMusic = loadSound('sounds/bgmusic.wav');
-    powerSound = loadSound('sounds/powerup.wav');
-    bleh = loadSound('sounds/bleh.mp3');
-    yum = loadSound('sounds/yummy.mp3');
-    aww = loadSound('sounds/ah.wav');
+    bgMusic = loadSound('hcs/sounds/bgmusic.wav');
+    powerSound = loadSound('hcs/sounds/powerup.wav');
+    bleh = loadSound('hcs/sounds/bleh.mp3');
+    yum = loadSound('hcs/sounds/yummy.mp3');
+    aww = loadSound('hcs/sounds/ah.wav');
 }
 ///////////////////////// GAME /////////////////////////////
 function setup() {
-    createCanvas(500, 500);
+    var canvas = createCanvas(500, 500);
+    canvas.parent('sketch-holder');
     junkFood = [pizza, burger, donut];
 
     vegetables = [kale, broccoli];

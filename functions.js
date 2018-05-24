@@ -1,3 +1,4 @@
-$(window).scroll(function(){
-    $(".titleBox").css("opacity", 1 - $(window).scrollTop() / 350);
+$(window).scroll(function() {
+    var h = $(".titleBox").height();
+    $(".titleBox").css("opacity", 1 - $(window).scrollTop() / h);
   });

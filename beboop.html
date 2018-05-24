@@ -3,19 +3,27 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+		  integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- P5.JS -->
+	<script src="p5/p5.min.js"></script>
+	<script src="p5/addons/p5.dom.min.js"></script>
+	<script src="p5/addons/p5.sound.min.js"></script>
+	<script language="javascript" type="text/javascript" src="beboop/index.js"></script>
+
 	<title>Be-Boop Boolean</title>
 </head>
 <body>
 <div class="container-fluid">
 	<!-- NAV BAR -->
 	<nav>
-		<a id="name" href="index.html" style="font-weight: 500;">AMY LUO</a>
+		<a id="name" href="index.html">AMY LUO</a>
 		<div class="pageLinks">
 			<a href="index.html">work</a>
 			<a href="about.html">about</a>
-			<a href="index.html">resume</a>
+			<a target="_blank" href="resume.pdf">resume</a>
 		</div>
 	</nav>
 
@@ -25,20 +33,33 @@
 	</div>
 
 	<!-- CONTENT -->
-	<div class="row">
-		<div class="contentTitle" style="font-weight: 500;">BE-BOOP BOOLEAN</div>
-	</div>
-	<div id="sketch-holder"></div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<script type="text/javascript" src="functions.js"></script>
+	<div class="contentContainer">
+		<div class="projectName">BE-BOOP BOOLEAN</div>
 
-<!-- P5.JS -->
-<script src="p5/p5.min.js"></script>
-<script src="p5/addons/p5.dom.min.js"></script>
-<script src="p5/addons/p5.sound.min.js"></script>
-<script language="javascript" type="text/javascript" src="beboop/index.js"></script>
+		<p>Be-Boop Boolean is a game that was created as a simple, fun way to teach children about boolean login and
+			promote Computer Science literacy from a young age.
+			This game was created in Processing as my Programming Basics final project. The full game below has been
+			translated into p5.js for web compatibility.</p>
+		<p>View the source code on my
+			<a style="color: dodgerblue;" href="https://github.com/amymluo/be-boop-boolean">Github</a>.</p>
+		<div id="sketch-holder"></div>
+		<p>The inspiration for this game came from Minecraft's Hour of Code, Codeacademy, and other similar CS-related
+			teaching tools. While the target audience is children, the goal of this project was to create something that
+			would be informative, but still fun to play for all.</p>
+	</div>
+
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+		integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+		crossorigin="anonymous"></script>
+<script type="text/javascript" src="functions.js"></script>
 </body>
 </html>
