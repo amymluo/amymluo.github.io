@@ -13,11 +13,10 @@ body {
 	float: right;
 }
 
-nav {
+.pos-f-t {
 	background-color: white;
 	opacity: .95;
 	padding: 1em 2em;
-	position: -webkit-sticky;
   	position: sticky;
   	top: 0;
   	z-index: 100;
@@ -147,6 +146,10 @@ button.navbar-toggler {
 	padding-right: 0;
 }
 
+.skills ul {
+	list-style-type: circle;
+}
+
 /* --------------- PROJECT PAGES --------------- */
 
 .contentContainer {
@@ -159,11 +162,21 @@ button.navbar-toggler {
 	font-size: 21px;
 	font-weight: 500 !important;
 	letter-spacing: 3px;
-	padding-bottom: 2em;
+	padding-bottom: .5em;
+}
+
+.projectDate {
+	font-size: 14px;
+	font-weight: lighter;
 }
 
 #sketch-holder {
 	padding: 2em;
 	width: 700px;
 	margin: auto;
+}
+
+#bus-holder canvas {
+	width: 100% !important;
+	height: auto !important;
 }
