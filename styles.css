@@ -28,6 +28,10 @@ a {
 	color: inherit;
 }
 
+ nav a:hover {
+	color: inherit;
+}
+
 #name {
 	font-weight: 500 !important;
 	letter-spacing: 2px;
@@ -36,6 +40,36 @@ a {
 .pageLinks a {
 	margin: 0 2em;
 	font-size: 14px;
+}
+
+.responsive a {
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.navbar-toggler {
+	display: none;
+}
+
+button.navbar-toggler {
+	padding: 0;
+}
+
+.navbar-toggler-icon {
+	width: 1.2em;
+}
+
+@media screen and (max-width: 600px) {
+	.navbar-toggler {
+		float: right;
+		border: none;
+		display: inline;
+	}
+
+	.pageLinks {
+		display: none;
+	}
 }
 
 /* --------------- HOME --------------- */
@@ -108,11 +142,16 @@ a {
 	padding-left: 0;
 }
 
+.about {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 /* --------------- PROJECT PAGES --------------- */
 
 .contentContainer {
 	padding: 2em;
-	max-width: 1000px;
+	max-width: 1080px;
 	margin: auto;
 }
 

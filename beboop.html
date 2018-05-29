@@ -17,15 +17,28 @@
 </head>
 <body>
 <div class="container-fluid">
-	<!-- NAV BAR -->
-	<nav>
-		<a id="name" href="index.html">AMY LUO</a>
-		<div class="pageLinks">
-			<a href="index.html">work</a>
-			<a href="about.html">about</a>
-			<a target="_blank" href="resume.pdf">resume</a>
-		</div>
-	</nav>
+	<!-- TOP BAR -->
+	<div class="pos-f-t">
+		<nav id="navBar" class="navbar-light">
+			<a id="name" href="index.html">AMY LUO</a>
+			<div class="pageLinks" id="pageLinks">
+				<a href="index.html">work</a>
+				<a href="about.html">about</a>
+				<a target="_blank" href="resume.pdf">resume</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+					aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse" id="navbarToggleExternalContent">
+				<div class="responsive">
+					<a href="index.html">work</a>
+					<a href="about.html">about</a>
+					<a target="_blank" href="resume.pdf">resume</a>
+				</div>
+			</div>
+		</nav>
+	</div>
 
 	<!-- COLOR BOX -->
 	<div class="titleBox">
@@ -39,11 +52,11 @@
 		<p>Be-Boop Boolean is a game that was created as a simple, fun way to teach children about boolean login and
 			promote Computer Science literacy from a young age.
 			This game was created in Processing as my Programming Basics final project. The full game below has been
-			translated into p5.js for web compatibility.</p>
+			translated into Javascript using p5.js for web compatibility.</p>
 		<p>View the source code on my
 			<a style="color: dodgerblue;" href="https://github.com/amymluo/be-boop-boolean">Github</a>.</p>
 		<div id="sketch-holder"></div>
-		<p>The inspiration for this game came from Minecraft's Hour of Code, Codeacademy, and other similar CS-related
+		<p>The inspiration for this game came from Minecraft's Hour of Code, CodeAcademy, and other similar CS-related
 			teaching tools. While the target audience is children, the goal of this project was to create something that
 			would be informative, but still fun to play for all.</p>
 	</div>

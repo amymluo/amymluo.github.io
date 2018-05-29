@@ -17,19 +17,32 @@
 </head>
 <body>
 <div class="container-fluid">
-    <!-- NAV BAR -->
-    <nav>
-        <a id="name" href="index.html">AMY LUO</a>
-        <div class="pageLinks">
-            <a href="index.html">work</a>
-            <a href="about.html">about</a>
-            <a target="_blank" href="resume.pdf">resume</a>
-        </div>
-    </nav>
+    <!-- TOP BAR -->
+    <div class="pos-f-t">
+        <nav id="navBar" class="navbar-light">
+            <a id="name" href="index.html">AMY LUO</a>
+            <div class="pageLinks" id="pageLinks">
+                <a href="index.html">work</a>
+                <a href="about.html">about</a>
+                <a target="_blank" href="resume.pdf">resume</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="responsive">
+                    <a href="index.html">work</a>
+                    <a href="about.html">about</a>
+                    <a target="_blank" href="resume.pdf">resume</a>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <!-- COLOR BOX -->
     <div class="titleBox">
-        <img src="beboopbox.png" alt="Title Box" width="100%">
+        <img src="hcsbox.png" alt="Title Box" width="100%">
     </div>
 
     <!-- CONTENT -->
@@ -37,13 +50,15 @@
         <div class="projectName">HUNGRY COLLEGE STUDENT</div>
 
         <p>Hungry College Student is a falling objects game that chronicles the poor life decisions of my friend John.
-        This game was created in Processing for my Programming Basics class. The full game below has been translated into
-        p5.js for web compatibility.</p>
+            The goal of this game is the catch and eat all of the falling junk food while avoiding the vegetables.
+            This game was created in Processing for my Programming Basics class. The full game below has been translated
+            into Javascript using p5.js for web compatibility.</p>
         <p>View the source code on my
             <a style="color: dodgerblue;" href="https://github.com/amymluo/hungry-college-student">Github</a>.</p>
         <div id="sketch-holder"></div>
-    </div>
 
+        <p>More stuff about the game.</p>
+    </div>
 
 
 </div>
