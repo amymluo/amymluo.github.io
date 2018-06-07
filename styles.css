@@ -171,9 +171,8 @@ button.navbar-toggler {
 }
 
 #sketch-holder {
-	padding: 2em;
 	width: 700px;
-	margin: auto;
+	margin: 2em auto;
 }
 
 #bus-holder canvas {

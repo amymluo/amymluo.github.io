@@ -769,9 +769,8 @@ function preload() {
 
 ///////////////////////// GAME /////////////////////////////
 function setup() {
+
     var cnv = createCanvas(700, 700);
-    var x = (windowWidth - width) / 2;
-    //cnv.position(x);
     cnv.parent('sketch-holder');
 
     circuit1 = new Circuit1();
