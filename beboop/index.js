@@ -769,7 +769,6 @@ function preload() {
 
 ///////////////////////// GAME /////////////////////////////
 function setup() {
-
     var cnv = createCanvas(700, 700);
     cnv.parent('sketch-holder');
 

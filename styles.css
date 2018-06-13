@@ -179,3 +179,17 @@ button.navbar-toggler {
 	width: 100% !important;
 	height: auto !important;
 }
+
+.breadImg {
+    display: inline-block;
+    width: 45%;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .breadImg {
+        display: block;
+        width: 100%;
+    }
+}
