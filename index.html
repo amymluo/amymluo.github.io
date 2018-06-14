@@ -46,8 +46,8 @@
 	<div class="row">
 		<div class="contentTitle">WORK</div>
         <div class="subtitle">
-            <div id="projectBtn" style="display: inline; color: black; font-weight: 500;">projects </div>
-                &nbsp;|&nbsp;<div id="artBtn" style="display: inline;"> art</div></div>
+            <div id="projectBtn" style="display: inline; color: black; font-weight: 500; cursor: pointer;">projects </div>
+                &nbsp;|&nbsp;<div id="artBtn" style="display: inline; cursor: pointer;"> art</div></div>
 	</div>
 
     <!-- PROJECTS -->
@@ -106,78 +106,90 @@
     <div id="art" class="work row" style="display: none;">
         <div class="col-lg-4 col-md-6">
             <div class=" art thumbnail" style="background-image: url(art/dream.jpg);">
-                <a href="">
-                    <div class="projectTitle">An Ideal Dream</div>
-                    <div class="hoverOverlay"></div>
-                </a>
+                <div class="projectTitle">An Ideal Dream</div>
+                <div class="hoverOverlay"></div>
+                <div class="artCaption">An Ideal Dream. Acrylic on canvas, 2017.</div>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
             <div class=" art thumbnail" style="background-image: url(art/ballet.jpg);">
-                <a href="">
-                    <div class="projectTitle">Backstage</div>
-                    <div class="hoverOverlay"></div>
-                </a>
+                <div class="projectTitle">Backstage</div>
+                <div class="hoverOverlay"></div>
+                <div class="artCaption">Backstage. Digital painting, 2016.</div>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="art thumbnail" style="background-image: url(art/operation.jpg);">
-                <a href="">
-                    <div class="projectTitle">Operation</div>
-                    <div class="hoverOverlay"></div>
-                </a>
+                <div class="projectTitle">Operation</div>
+                <div class="hoverOverlay"></div>
+                <div class="artCaption">Operation. Digital painting, 2016.</div>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="art thumbnail" style="background-image: url(art/dollshelf.jpg);">
-                <a href="">
-                    <div class="projectTitle">Doll Shelf</div>
-                    <div class="hoverOverlay"></div>
-                </a>
+                <div class="projectTitle">Doll Shelf</div>
+                <div class="hoverOverlay"></div>
+                <div class="artCaption">Doll Shelf. Digital painting, 2016.</div>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="art thumbnail" style="background-image: url(art/beach.jpg);">
-                <a href="">
-                    <div class="projectTitle">Beach Babe</div>
-                    <div class="hoverOverlay"></div>
-                </a>
+                <div class="projectTitle">Beach Babe</div>
+                <div class="hoverOverlay"></div>
+                <div class="artCaption">Beach Babe. Digital painting, 2016.</div>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="art thumbnail" style="background-image: url(art/games.jpg);">
-                <a href="">
-                    <div class="projectTitle">Games</div>
-                    <div class="hoverOverlay"></div>
-                </a>
+                <div class="projectTitle">Games</div>
+                <div class="hoverOverlay"></div>
+                <div class="artCaption">Games. Digital painting, 2016.</div>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="art thumbnail" style="background-image: url(art/evil.jpg);">
-                <a href="">
-                    <div class="projectTitle">See No Evil</div>
-                    <div class="hoverOverlay"></div>
-                </a>
+                <div class="projectTitle">See No Evil</div>
+                <div class="hoverOverlay"></div>
+                <div class="artCaption">See No Evil. Soft pastels on paper, 2015.</div>
+
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="art thumbnail" style="background-image: url(art/hometown.jpg);">
-                <a href="">
-                    <div class="projectTitle">Hometown</div>
-                    <div class="hoverOverlay"></div>
-                </a>
+                <div class="projectTitle">Hometown</div>
+                <div class="hoverOverlay"></div>
+                <div class="artCaption">Hometown. Acrylic on canvas, 2016.</div>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="art thumbnail" style="background-image: url(art/river.jpg);">
-                <a href="">
-                    <div class="projectTitle">My River</div>
-                    <div class="hoverOverlay"></div>
-                </a>
+                <div class="projectTitle">My River</div>
+                <div class="hoverOverlay"></div>
+                <div class="artCaption">My River. Acrylic on canvas, 2016.</div>
             </div>
         </div>
     </div>
 	</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="modalImg">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+
+
+
+
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
 			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 			crossorigin="anonymous"></script>
