@@ -150,11 +150,15 @@ button.navbar-toggler {
 	list-style-type: circle;
 }
 
+.aboutContainer {
+    max-width: 1080px !important;
+}
+
 /* --------------- PROJECT PAGES --------------- */
 
 .contentContainer {
 	padding: 2em;
-	max-width: 1080px;
+	max-width: 800px;
 	margin: auto;
 }
 
