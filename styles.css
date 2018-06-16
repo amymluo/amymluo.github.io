@@ -199,7 +199,7 @@ button.navbar-toggler {
 
 .breadImg {
     display: inline-block;
-    width: 45%;
+    width: 47%;
     padding-bottom: 2em;
     padding-top: 1em;
 }
@@ -213,7 +213,7 @@ button.navbar-toggler {
 
 
 
-/* -------------------------- MODAL --------------*/
+/* ------------------ MODAL --------------*/
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */

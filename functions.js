@@ -8,14 +8,15 @@ $(document).ready(function(){
     $("#projectBtn").click(function(){
         console.log("here");
         $("#art").fadeOut(600);
-        $("#projects").fadeIn(600);
+        $("#projects").fadeIn(1500);
         $("#projectBtn").css({"color": "black", "font-weight": "500"});
         $("#artBtn").css({"color": "gray", "font-weight": "normal"});
     });
 
     $("#artBtn").click(function(){
         $("#projects").fadeOut(600);
-        $("#art").fadeIn(600);
+        //$("#projects").hide();
+        $("#art").fadeIn(1500);
         $("#artBtn").css({"color": "black", "font-weight": "500"});
         $("#projectBtn").css({"color": "gray", "font-weight": "normal"});
     });
