@@ -9,7 +9,6 @@ $(document).ready(function() {
     const projectImgs = document.getElementsByClassName("projectImg");
     const modalImg = document.getElementById("modalImg");
     const captionText = document.getElementById("caption");
-    console.log(projectImgs);
 
     for (let i = 0, len = projectImgs.length; i < len; i++) {
         const projectImg = projectImgs[i];

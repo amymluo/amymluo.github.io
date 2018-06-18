@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="projects.js"></script>
     <title>NUGO Redesign</title>
 </head>
 <body>
@@ -37,7 +39,7 @@
 
     <!-- COLOR BOX -->
     <div class="titleBox">
-        <img src="titleboxes/hcsbox.png" alt="Title Box" width="100%">
+        <img src="titleboxes/nugobox.png" alt="Title Box" width="100%">
     </div>
 
     <!-- CONTENT -->
@@ -46,21 +48,61 @@
         <div class="projectDate">Fall 2016</div>
         <br>
         <p> Coming into Northeastern University as a freshman, the NUGO app was essential for me to keep track of my
-            class schedule, meal swipes, and other balances. However I felt like the app was not very intuitive nor
-            attractive. I decided to redesign the UI as a project for Design, Process Context, & Systems.</p>
+            class schedule, meal swipes, and other balances. Although a very useful app, I felt like the app was not
+            very intuitive to users nor attractive. I decided to redesign the UI as a project for my Design, Process,
+            Context, & Systems class.</p>
+        <p> Below is the prototype I created using InvisionApp.</p>
+
         <iframe width="438" height="930" src="https://invis.io/9FK0G6C8SZP" frameborder="0" allowfullscreen></iframe>
+
+        <p> To go about improving the NUGO app, I first had to identify the key components and functions of the app. After
+            discussing with my peers, I decided that the most useful and important features were viewing your balances,
+            schedule, and courses. While I wanted to retain all previous functionality of the NUGO app, I chose to focus
+            on fleshing out these three components. </p>
+
+        <p> Before starting the wireframe, I downloaded several agenda/scheduler apps for research. I noted aspects I
+            thought worked well, and those that did not, and I compared them to the current NUGO app. Something I definitely
+            wanted to add in my version of NUGO was a calendar view. The current app show's your upcoming classes, and
+            which classes you have on each day of the week, but there was no way to view your full schedule, or long-term
+            plans. </p>
+
+        <p> I also wanted to create clear sections for better navigation. I felt like everything important was on the
+            "Home" section of NUGO, including all of your meal swipes, laundry and printing dollars, and upcoming classes. </p>
+
+        <img class="projectImg" src="nugo_sketch.png" alt="NUGO sketch" align="right" width="30%" style="margin-left: 1em;">
+
+        <p> For this redesign, I wanted the workflow to go from the navigation section, to the section overview, to the detail view.
+            I chose a simple sidebar as the main mode of navigation because I thought it was the most intuitive and
+            effective.</p>
+        <p> As shown in my sketch, each section has an overview, which displays the most important information such as
+            number of meal swipes left or remaining balance. However if the user would like more information,
+            they will be directed to the detail view after pressing on the component. For example, in the case of meal
+            swipes the detail view would show when and where the last swipes were used.
+
+        <p> A similar work-flow was used for the other sections as well. </p>
+
     </div>
 
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
+<!-- The Modal -->
+<div id="projectModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="modalImg">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="functions.js"></script>
 </body>
 </html>

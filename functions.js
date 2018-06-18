@@ -54,12 +54,6 @@ $(document).ready(function(){
     modal.onclick = function() {
         modal.style.display = "none";
     };
-
-
-
-
-
-
 });
 
 
