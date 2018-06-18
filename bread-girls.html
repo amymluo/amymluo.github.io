@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="projects.js"></script>
     <title>Bread Girls</title>
 </head>
 <body>
@@ -64,8 +66,8 @@
             collaborative effort. </p>
 
         <div style="display: inline-block">
-            <img class="breadImg" src="bread%20girls/bread_sd.png" style="float:left;">
-            <img class="breadImg" src="bread%20girls/bread_touma.png" style="float:right;">
+            <img class="projectImg breadImg" src="bread%20girls/bread_sd.png" style="float:left;" alt="Sourdough">
+            <img class="projectImg breadImg" src="bread%20girls/bread_touma.png" style="float:right;" alt="Touma Dachi">
         </div>
 
         <p> In Bread Girls, you play as a self-insert male protagonist. The left screen above show one of the dateable
@@ -73,8 +75,8 @@
             to support your journey in pursuit of the ultimate high school romance.</p>
 
         <div style="display: inline-block">
-            <img class="breadImg" src="bread%20girls/bread_phone.png" style="float:left;">
-            <img class="breadImg" src="bread%20girls/bread_chat.png" style="float:right;">
+            <img class="projectImg breadImg" src="bread%20girls/bread_phone.png" style="float:left;" alt="Phone Chat Screen">
+            <img class="projectImg breadImg" src="bread%20girls/bread_chat.png" style="float:right;" alt="Touma Dachi Conversation">
         </div>
 
         <p> The two images above are the custom screen I created that simulates an interactive phone screen. At the end
@@ -85,15 +87,25 @@
     </div>
 
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
+<!-- The Modal -->
+<div id="projectModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="modalImg">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="functions.js"></script>
 </body>
 </html>

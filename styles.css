@@ -234,7 +234,6 @@ button.navbar-toggler {
     margin: auto;
     display: block;
     height: 90%;
-    max-height: 700px;
     width: auto;
     background-color: transparent;
 }

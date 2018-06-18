@@ -43,7 +43,6 @@ $(document).ready(function(){
         }
     }
 
-
 // Get the <span> element that closes the modal
     const span = document.getElementsByClassName("close")[0];
 
@@ -55,6 +54,12 @@ $(document).ready(function(){
     modal.onclick = function() {
         modal.style.display = "none";
     };
+
+
+
+
+
+
 });
 
 
