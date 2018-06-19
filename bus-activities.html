@@ -7,6 +7,8 @@
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="projects.js"></script>
 
     <!-- P5.JS -->
     <script src="p5/p5.min.js"></script>
@@ -59,7 +61,7 @@
             or click on any of the buses.</p>
 
 
-        <p> In our 5D Fundamentals class, we partnered with the Mayor's Office of New Urban Mechanics for the semester to
+        <p> In our 5D Fundamentals class, we partnered with the Mayor's Office of New Urban Mechanics (MONUM) for the semester to
             re-imagine the space of a bus shelter. For our final project, I wanted to create something that would give
             bus riders a opportunity to interact with bus stops in a non-traditional way. Thus, we decided create a
             suggestions site for activities to do while waiting for the bus.</p>
@@ -72,22 +74,51 @@
         <p> Despite being a computer science major, this was my first experience with HTML/CSS and website development.
             We had a lot of fun playing around with static vs. scrolling elements for our idea pages, figuring out
             image overlays, and positioning elements, albeit with lots of documentation reading, trial and error, and
-            Googling. My partner and I also happened to be taking Programming Basics the same semester, so we were able
+            Googling. </p>
+
+        <div style="display: inline-block">
+            <img class="projectImg breadImg" src="homepageBuses/idea1.png" style="float:left;" alt="Idea Page">
+            <img class="projectImg breadImg" src="homepageBuses/idea2.png" style="float:right;" alt="Idea Revealed">
+        </div>
+
+        <p> Above are screenshots of one of our activity idea pages. The yellow box was a scrolling element, while the
+            background with the idea was static with absolute position. This gave the idea pages a fun little sense of
+            revealing the idea. </p>
+
+        <img class="projectImg" src="homepageBuses/home_draft.png" alt="Homepage Draft" align="right" width="40%" style="margin-left: 1em;">
+
+        <p> While I was happy with the look and feel of the idea pages, our initial homepage, shown on the right, looked
+            quite different. The original idea was to use geometric shapes overlayed with an image of a bus, for a minimalistic look. After some
+            deliberation and input from our classmates, we decided that this design did not fit the aesthetic of the rest of the website.</p>
+
+        <p> My partner and I also happened to be taking Programming Basics the same semester, so I was able
             to take what we learned about Processing and create an animated bus graphic in Javascript using the p5.js
-            library. This gave our website a more cohesive look that portrayed the lighthearted attitude we wanted.</p>
+            library. I used MBTA colors for the bus graphic to tie in the theme, and our work with MONUM.
+            This also gave our website a more cohesive look that portrayed the lighthearted attitude we wanted.</p>
     </div>
 
 
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
+
+<!-- The Modal -->
+<div id="projectModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="modalImg">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="functions.js"></script>
 </body>
 </html>

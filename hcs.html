@@ -7,6 +7,8 @@
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="projects.js"></script>
 
     <!-- P5.JS -->
     <script src="p5/p5.min.js"></script>
@@ -62,26 +64,67 @@
 
         <div id="sketch-holder" style="width: 500px;"></div>
 
-        <p> For this game, I wanted to create something reminiscent of the simple, 2D flash games I played as a child on
-            sites like Neopets and AddictingGames. I also think Processing lends itself very well this style of game.</p>
+        <p> For this game, I wanted to create something reminiscent of the simple, 2D flash games I played when I was
+            younger on sites like Neopets and AddictingGames. I also think Processing lends itself very well this style
+            of game because of it's ability to easily render shapes and animations with user input.</p>
 
-        <p> My previous experience with Java was very useful in the development of this game, as I was able to take advantage
-            of polymorphism with the use of an abstract food class, and specific classes that inherited common attributes
-            to represent different types of falling food. All of the graphics were created in Adobe Illustrator for an
+        <p> My previous experience with Java was very useful in the development of this game. I was able to take advantage
+            of the object-oriented nature of Java by representing the player, food, and game state as classes. This allowed
+            me to handle the creation of food and collision in a more streamlined way. </p>
+
+        <div style="display: inline-block; width: 100%">
+            <img class="hcsIcon projectImg" src="hcs/images/hamburger.png" alt="Hamburger">
+            <img class="hcsIcon projectImg" src="hcs/images/kale.png" alt="Kale">
+            <img class="hcsIcon projectImg" src="hcs/images/donut.png" alt="Donut">
+            <img class="hcsIcon projectImg" src="hcs/images/broccoli.png" alt="Broccoli">
+            <img class="hcsIcon projectImg" src="hcs/images/bubble%20tea.png" alt="Bubble Tea (Power-up)">
+            <img class="hcsIcon projectImg" src="hcs/images/pizza.png" alt="Pizza">
+        </div>
+
+        <p> As for the graphics, I wanted the theme of the game to be personal and relatable to my life. One of the first
+            things I thought of was how college students are almost always hungry. My friend John and I also joke about
+            his bad eating habits. Therefore, the theme I went was for in Hungry College Student was feeding John junk food and
+            avoiding vegetables. Originally I wanted the junk food to be the specific foods that John would only eat,
+            chicken tenders, Cheesecake Factory, and Frappuccinos, however I found that these foods didn't come across as
+            clearly in a simple graphic, so I chose to go with more identifiable foods. </p>
+
+        <div style="display: inline-block; width: 100%; margin-bottom: 2em;">
+            <img class="hcsIcon projectImg" src="hcs/hcs_sketch.png" width="40%" alt="Player sketches">
+            <img class="hcsIcon projectImg" src="hcs/images/john.png" alt="John">
+            <img class="hcsIcon projectImg" src="hcs/images/power%20john.png" alt="Super John">
+        </div>
+
+       <p> All of the graphics were created in Adobe Illustrator for an
             overall colorful, flat, graphic aesthetic. </p>
+
+        <div style="display: inline-block; width: 100%; margin-bottom: 2em;">
+            <img class="breadImg projectImg" src="hcs/kitchen%20muted.png" alt="Kitchen draft colors" style="float: left;">
+            <img class="breadImg projectImg" src="hcs/images/kitchen.png" alt="Kitchen Final" style="float: right;">
+        </div>
+
+
     </div>
-
-
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
+<!-- The Modal -->
+<div id="projectModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="modalImg">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="functions.js"></script>
 </body>
 </html>

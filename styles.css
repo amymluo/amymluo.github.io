@@ -216,6 +216,11 @@ iframe {
     margin: auto;
 }
 
+.hcsIcon {
+    padding: 0 3%;
+    box-sizing: content-box;
+}
+
 
 
 /* ------------------ MODAL --------------*/
