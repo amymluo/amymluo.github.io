@@ -221,6 +221,11 @@ iframe {
     box-sizing: content-box;
 }
 
+.bIcon {
+    padding: 0 2.5%;
+    box-sizing: content-box;
+}
+
 
 
 /* ------------------ MODAL --------------*/
