@@ -4,7 +4,7 @@ $(window).scroll(function () {
     box.css("opacity", 1 - $(window).scrollTop() / h);
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     const projectModal = document.getElementById("projectModal");
     const projectImgs = document.getElementsByClassName("projectImg");
     const modalImg = document.getElementById("modalImg");

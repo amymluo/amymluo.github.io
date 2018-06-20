@@ -4,8 +4,8 @@ $(window).scroll(function () {
     box.css("opacity", 1 - $(window).scrollTop() / h);
 });
 
-$(document).ready(function(){
-    $("#projectBtn").click(function(){
+$(document).ready(function () {
+    $("#projectBtn").click(function () {
         console.log("here");
         $("#art").fadeOut(600);
         $("#projects").fadeIn(1500);
@@ -13,7 +13,7 @@ $(document).ready(function(){
         $("#artBtn").css({"color": "gray", "font-weight": "normal"});
     });
 
-    $("#artBtn").click(function(){
+    $("#artBtn").click(function () {
         $("#projects").fadeOut(600);
         //$("#projects").hide();
         $("#art").fadeIn(1500);
@@ -34,7 +34,7 @@ $(document).ready(function(){
     for (let i = 0, len = artThumbnails.length; i < len; i++) {
         const artThumb = artThumbnails[i];
 
-        artThumb.onclick = function() {
+        artThumb.onclick = function () {
             modal.style.display = "block";
             style = artThumb.currentStyle || window.getComputedStyle(artThumb, false);
 
@@ -47,11 +47,11 @@ $(document).ready(function(){
     const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
+    span.onclick = function () {
         modal.style.display = "none";
     };
 
-    modal.onclick = function() {
+    modal.onclick = function () {
         modal.style.display = "none";
     };
 });
