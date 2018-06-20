@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="projects.js"></script>
+    <title>Animator</title>
+</head>
+<body>
+<div class="container-fluid">
+    <!-- TOP BAR -->
+    <div class="pos-f-t">
+        <nav id="navBar" class="navbar-light">
+            <a id="name" href="index.html">AMY LUO</a>
+            <div class="pageLinks" id="pageLinks">
+                <a href="index.html">work</a>
+                <a href="about.html">about</a>
+                <a target="_blank" href="resume.pdf">resume</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="responsive">
+                    <a href="index.html">work</a>
+                    <a href="about.html">about</a>
+                    <a target="_blank" href="resume.pdf">resume</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- COLOR BOX -->
+    <div class="titleBox">
+        <img src="titleboxes/anibox.png" alt="Title Box" width="100%">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="contentContainer">
+        <div class="projectName">ANIMATOR</div>
+        <div class="projectDate">Fall 2017</div>
+        <br>
+        <p> Please contact me if you are interested in viewing the source code.</p>
+
+        <p> This was a half-semester long project developed in Object-Oriented Design in collaboration with Anika Jagow.</p>
+
+        <p> Followed the Model, View, Controller (MVC) design pattern. Created three different view, textual, SVG, and
+            Java Swing view. Also created an interactive view that was a hybrid of all three. This view allowed for user
+            interaction, such as speed control, scrubbing, shape selection. It could also export to an SVG file or textual
+            description.</p>
+
+        <p> We also used the Adapter design pattern to fit our model with another team's views. We had to build new controllers
+            that adapted our models for shapes and animations to fit their views. </p>
+
+        <p> For this project, I admit that the UI was not a focus, and it was more focused on the functionality and back
+            end. Java Swing was pretty difficult to use, and not the most intuitive to build a view. </p>
+
+        <p> For the models, I chose to represent shapes with a Shape interface, and have the Rectangle and Oval classes
+            implement that interface. We used a similar approach with the animations, ChangeColor, Scale, and Move. </p>
+
+        <p> Separate controllers for each view, since they were so specific. We used the visitor pattern to implement the
+            SVG view, and read a lot of documentation for Java Swing. Very much so a learning experience.</p>
+    </div>
+
+</div>
+
+<!-- The Modal -->
+<div id="projectModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="modalImg">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+</html>
