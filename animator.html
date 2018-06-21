@@ -48,26 +48,36 @@
         <div class="projectName">ANIMATOR</div>
         <div class="projectDate">Fall 2017</div>
         <br>
-        <p> Please contact me if you are interested in viewing the source code.</p>
+        <p> This was a half-semester long project developed in Object-Oriented Design in collaboration with Anika
+            Jagow. The application has the ability to read in text files and render an animation described by the
+            file in several different ways.</p>
 
-        <p> This was a half-semester long project developed in Object-Oriented Design in collaboration with Anika Jagow.</p>
+        <p> A Model, View, Controller (MVC) design pattern was used for this project. Throughout the semester, we built
+            on our code base and implemented new features to our animator. </p>
 
-        <p> Followed the Model, View, Controller (MVC) design pattern. Created three different view, textual, SVG, and
-            Java Swing view. Also created an interactive view that was a hybrid of all three. This view allowed for user
-            interaction, such as speed control, scrubbing, shape selection. It could also export to an SVG file or textual
-            description.</p>
+        <p> Below is a screen of our final buildings animation rendering. The interactive view supported features of
+            shape selection, play/pause, scrubbing, looping, and exporting to an SVG file or text description. </p>
 
-        <p> We also used the Adapter design pattern to fit our model with another team's views. We had to build new controllers
-            that adapted our models for shapes and animations to fit their views. </p>
+        <img src="buildings_render.png" alt="Buildings animation render using Java Swing" class="projectImg"
+             width="70%" style="margin: auto; display: block; margin-bottom: 1em;">
 
-        <p> For this project, I admit that the UI was not a focus, and it was more focused on the functionality and back
-            end. Java Swing was pretty difficult to use, and not the most intuitive to build a view. </p>
+        <p> The Model represents the data in this application. I used interfaces and classes to represent shapes and
+            animations. I had a Rectangle and Oval class that both implemented a Shape interface. A similar approach was
+            used for the ChangeColor, Scale, and Move classes that implemented an Animation interface.</p>
 
-        <p> For the models, I chose to represent shapes with a Shape interface, and have the Rectangle and Oval classes
-            implement that interface. We used a similar approach with the animations, ChangeColor, Scale, and Move. </p>
+        <p> Several views were built to work with our Model, which is one of the advantages of the MVC design pattern.
+            We had a text view that output the animation as a textual description in plain English. Another view was the
+            SVG view, which exported the animation as an SVG file that could be displayed in web browsers. The third
+            view I implemented was the visual view that displayed the animation using Java Swing. Our final view, as
+            shown in the screen shot, was a combination of all three views with additional interactive
+            features.</p>
 
-        <p> Separate controllers for each view, since they were so specific. We used the visitor pattern to implement the
-            SVG view, and read a lot of documentation for Java Swing. Very much so a learning experience.</p>
+        <p> The Controllers mediated the communication between the Views and the Model. They handled user inputs from
+            the View, and sent that information back to the Model. This made sure that the View could not directly
+            modify the Model, which could pose a security issue in other applications./p>
+
+        <p> Please contact me if you are interested in viewing the source code. It is not available on Github due to
+            course policy.</p>
     </div>
 
 </div>

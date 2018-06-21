@@ -209,6 +209,15 @@ button.navbar-toggler {
         display: block;
         width: 100%;
     }
+
+    #sketch-holder {
+        width: 100% !important;
+    }
+
+    #sketch-holder canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
 }
 
 iframe {
@@ -222,7 +231,8 @@ iframe {
 }
 
 .bIcon {
-    padding: 0 2.5%;
+    padding: 10px 2%;
+    width: 14%;
     box-sizing: content-box;
 }
 
