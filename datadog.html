@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="projects.js"></script>
+
+    <title>Datadog</title>
+</head>
+<body>
+<div class="container-fluid">
+    <!-- TOP BAR -->
+    <div class="pos-f-t">
+        <nav id="navBar" class="navbar-light">
+            <a id="name" href="index.html">AMY LUO</a>
+            <div class="pageLinks" id="pageLinks">
+                <a class="selected" href="index.html">work</a>
+                <a href="about.html">about</a>
+                <a target="_blank" href="resume.pdf">resume</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="responsive">
+                    <a class="selected" href="index.html">work</a>
+                    <a href="about.html">about</a>
+                    <a target="_blank" href="resume.pdf">resume</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- COLOR BOX -->
+    <div class="titleBox">
+        <img src="titleboxes/ddbox.png" alt="Title Box" width="100%">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="contentContainer">
+        <div class="projectName">DATADOG</div>
+        <div class="projectDate">Spring 2019</div>
+        <br>
+
+        <p> I worked at Datadog as a Software Engineering Intern on the Dashboard Team from January to June 2019. I focused on mostly front-end projects that had visual changes to the dashboards product. I worked mainly with React and in Python when backend changes were needed.</p>
+
+        <p> Dashboard links in the Note widget was a feature I developed and was released to customers. The purpose of this feature was to improve navigation between dashboards and add the ability to group related boards.</p>
+
+        <img class="ddImg projectImg"  width="100%" src="datadogscreens/dashboard_links.gif" alt="New Note Widget Editor">
+        <br><br>
+        <p> For this feature, I worked on displaying rich previews for raw urls that linked to other dashboards or dashboard lists. I also implemented a new editor that showed a live preview of any markdown or links in the note.</p>
+
+        <p>Below is a comparison between the updated and old Note widget editors.</p>
+
+        <div style="display: inline-block; width: 100%;">
+            <img class="ddImg projectImg" width="48%" src="datadogscreens/new_notes.png" alt="Updated Note Widget Editor"
+                 style="float: left;">
+            <img class="ddImg projectImg" width="48%" src="datadogscreens/old_notes.png" alt="Old Note Widget Editor" style="float: right;">
+        </div>
+        <br><br>
+        <p>This proved to be actually quite challenging to implement, as first urls had to be recognized and parsed to see if it is a dashboard or dashboard list url. The dashboard ID then had to be extracted from the url, and an API call was made to the backend to retrieve the information to display such as the dashboard title, type, and template variables. I attended weekly meetings with the product designer and product manager to go over new designs, and assess the progress of the project.</p>
+
+        <p>Another project I worked on at was Dashboard Details. <a style="color: dodgerblue;" target="_blank" href="https://www.datadoghq.com/blog/dashboard-details/">View the Datadog blog post here.</a></p>
+        <img class="ddImg projectImg"  width="100%" src="datadogscreens/dash social.gif" alt="Dashboard Details GIF">
+
+        <br><br>
+        <p>This feature was also related to adding context and organization to dashboards. Relevant information about the specific dashboard is displayed by clicking on the caret my the dashboard title. This reveals a dashboard description, which supports markdown and is editable on custom boards, suggested dashboards which comes from the data science team, and top users.</p>
+
+
+
+        
+
+
+
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="projectModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="modalImg">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127050586-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127050586-1');
+</script>
+</body>
+</html>

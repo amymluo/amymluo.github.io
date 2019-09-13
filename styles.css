@@ -28,12 +28,22 @@ a {
 }
 
 nav a:hover {
+    color: gray;
+}
+
+a.selected {
+    color: black;
+    font-weight: 500;
+}
+
+a.selected:hover {
     color: inherit;
 }
 
 #name {
     font-weight: 500 !important;
     letter-spacing: 2px;
+    color: inherit;
 }
 
 .pageLinks a {
