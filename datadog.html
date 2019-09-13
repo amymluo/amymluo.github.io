@@ -10,12 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="projects.js"></script>
 
-    <!-- P5.JS -->
-    <script src="p5/p5.min.js"></script>
-    <script src="p5/addons/p5.dom.min.js"></script>
-    <script src="p5/addons/p5.sound.min.js"></script>
-    <script language="javascript" type="text/javascript" src="hcs/index.js"></script>
-
     <title>Datadog</title>
 </head>
 <body>
@@ -25,7 +19,7 @@
         <nav id="navBar" class="navbar-light">
             <a id="name" href="index.html">AMY LUO</a>
             <div class="pageLinks" id="pageLinks">
-                <a href="index.html">work</a>
+                <a class="selected" href="index.html">work</a>
                 <a href="about.html">about</a>
                 <a target="_blank" href="resume.pdf">resume</a>
             </div>
@@ -36,7 +30,7 @@
             </button>
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="responsive">
-                    <a href="index.html">work</a>
+                    <a class="selected" href="index.html">work</a>
                     <a href="about.html">about</a>
                     <a target="_blank" href="resume.pdf">resume</a>
                 </div>
@@ -55,59 +49,34 @@
         <div class="projectDate">Spring 2019</div>
         <br>
 
-        <p> I worked at Datadog as a Software Engineering Intern on the Dashboard Team from January to June 2019.</p>
+        <p> I worked at Datadog as a Software Engineering Intern on the Dashboard Team from January to June 2019. I focused on mostly front-end projects that had visual changes to the dashboards product. I worked mainly with React and in Python when backend changes were needed.</p>
 
-        <p> View the source code on my
-            <a style="color: dodgerblue;" target="_blank" href="https://github.com/amymluo/hungry-college-student">Github</a>.
-        </p>
+        <p> Dashboard links in the Note widget was a feature I developed and was released to customers. The purpose of this feature was to improve navigation between dashboards and add the ability to group related boards.</p>
 
-        <p> For this game, I wanted to create something reminiscent of the simple, 2D flash games I played when I was
-            younger on sites like Neopets and AddictingGames. I also think Processing lends itself very well this style
-            of game because of it's ability to easily render shapes and animations with user input.</p>
+        <img class="ddImg projectImg"  width="100%" src="datadogscreens/dashboard_links.gif" alt="New Note Widget Editor">
+        <br><br>
+        <p> For this feature, I worked on displaying rich previews for raw urls that linked to other dashboards or dashboard lists. I also implemented a new editor that showed a live preview of any markdown or links in the note.</p>
 
-        <p> My previous experience with Java was very useful in the development of this game. I was able to take
-            advantage
-            of the object-oriented nature of Java by representing the player, food, and game state as classes. This
-            allowed
-            me to handle the creation of food and collision in a more streamlined way. </p>
-
-        <div style="display: inline-block; width: 100%">
-            <img class="hcsIcon projectImg" src="hcs/images/hamburger.png" alt="Hamburger">
-            <img class="hcsIcon projectImg" src="hcs/images/kale.png" alt="Kale">
-            <img class="hcsIcon projectImg" src="hcs/images/donut.png" alt="Donut">
-            <img class="hcsIcon projectImg" src="hcs/images/broccoli.png" alt="Broccoli">
-            <img class="hcsIcon projectImg" src="hcs/images/bubble%20tea.png" alt="Bubble Tea (Power-up)">
-            <img class="hcsIcon projectImg" src="hcs/images/pizza.png" alt="Pizza">
-        </div>
-
-        <p> As for the graphics, I wanted the theme of the game to be personal and relatable to my life. One of the
-            first things I thought of was how college students are almost always hungry. My friend John and I also joke about
-            his bad eating habits. Therefore, the theme I went was for in Hungry College Student was feeding John junk
-            food and avoiding vegetables. Originally I wanted the junk food to be the specific foods that John would only eat,
-            chicken tenders, buffalo blasters, and Frappuccinos, however I found that these foods didn't come across
-            as clearly in a simple graphic, so I chose to go with more identifiable foods. </p>
-
-        <div style="display: inline-block; width: 100%; margin-bottom: 1em;">
-            <img class="hcsIcon projectImg" src="hcs/hcs_sketch.png" width="40%" alt="Player sketches">
-            <img class="hcsIcon projectImg" src="hcs/images/john.png" alt="John">
-            <img class="hcsIcon projectImg" src="hcs/images/power%20john.png" alt="Super John">
-        </div>
-
-        <p> All of the images were created in Adobe Illustrator for an
-            overall colorful, flat, graphic aesthetic. For the player sprite, I wanted something very simple, made of a
-            few shapes, but still very expressive. After creating some sketches, I decided on just a head sprite with
-            an open mouth and sparkle eyes.</p>
+        <p>Below is a comparison between the updated and old Note widget editors.</p>
 
         <div style="display: inline-block; width: 100%;">
-            <img class="breadImg projectImg" src="hcs/kitchen%20muted.png" alt="Kitchen draft colors"
+            <img class="ddImg projectImg" width="48%" src="datadogscreens/new_notes.png" alt="Updated Note Widget Editor"
                  style="float: left;">
-            <img class="breadImg projectImg" src="hcs/images/kitchen.png" alt="Kitchen Final" style="float: right;">
+            <img class="ddImg projectImg" width="48%" src="datadogscreens/old_notes.png" alt="Old Note Widget Editor" style="float: right;">
         </div>
+        <br><br>
+        <p>This proved to be actually quite challenging to implement, as first urls had to be recognized and parsed to see if it is a dashboard or dashboard list url. The dashboard ID then had to be extracted from the url, and an API call was made to the backend to retrieve the information to display such as the dashboard title, type, and template variables. I attended weekly meetings with the product designer and product manager to go over new designs, and assess the progress of the project.</p>
 
-        <p> For the background, I originally went for a more muted, realistic color scheme that could be a believable
-            kitchen. However, I felt like this didn't really fit the tone of the game, so I changed the color scheme for
-            something more colorful and cartoon-like. Also, to further the theme I added more elements of a messy kitchen,
-            which is probably more accurate for a college student. </p>
+        <p>Another project I worked on at was Dashboard Details. <a style="color: dodgerblue;" target="_blank" href="https://www.datadoghq.com/blog/dashboard-details/">View the Datadog blog post here.</a></p>
+        <img class="ddImg projectImg"  width="100%" src="datadogscreens/dash social.gif" alt="Dashboard Details GIF">
+
+        <br><br>
+        <p>This feature was also related to adding context and organization to dashboards. Relevant information about the specific dashboard is displayed by clicking on the caret my the dashboard title. This reveals a dashboard description, which supports markdown and is editable on custom boards, suggested dashboards which comes from the data science team, and top users.</p>
+
+
+
+        
+
 
 
     </div>
